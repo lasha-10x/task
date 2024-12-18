@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Applies only to index.html */
+
+/* Color changing & centering */
+h1 {
+  text-align: center;
+  color: darkblue;
+}
+/* index.html puts side by side, centers & changes background */
+.creative-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: #f4f4f4;
+}
+
+nav ul {
+  width: 524px;
+  display: flex;
+  align-items: center;
+  background: #222;
+  border-radius: 8px;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+}
+
+li {
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 100%;
+  background: linear-gradient(45deg, #4f1919, #ff3333);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+nav ul li:nth-child(1):hover ~ span {
+  left: 0;
+}
+
+nav ul li:nth-child(2):hover ~ span {
+  left: 175px;
+}
+
+nav ul li:nth-child(3):hover ~ span {
+  left: 349px;
+}
